@@ -1,0 +1,1648 @@
+/* Brxy Responsive CSS */
+@media screen and (max-width:1279px) {
+	/* Brxy Normal CSS */
+	.owl-drag .owl-prev:before {
+		left: -40px;
+	}
+	.owl-drag .owl-next:before {
+		right: -40px;
+	}
+	.brxy-projects {
+		padding: 60px 60px 55px;
+	}
+	.promo-wrap {
+		padding: 50px;
+	}
+	.promo-info {
+		width: 100%;
+	}
+	.brxy-masonry.masonry-item-4 .masonry-item {
+		width: 33.3333%;
+	}
+	.brxy-masonry.masonry-item-5 .masonry-item {
+		width: 25%;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+	  max-width: 1170px;
+	}
+}
+@media screen and (max-width:1199px) {
+	/* Brxy Normal CSS */
+	.client-item img {
+		max-width: 130px;
+	}
+	.brxy-masonry.spacer2, .brxy-masonry.spacer5 {
+		margin: 0 -15px;
+	}
+	.brxy-masonry.spacer2 .masonry-item, .brxy-masonry.spacer5 .masonry-item {
+		padding: 0 15px 30px;
+	}
+	.brxy-sinlge-detail.open .swiper-container {
+		-webkit-transform: translateX(-380px);
+		-ms-transform: translateX(-380px);
+		transform: translateX(-380px);
+	}
+	.brxy-sinlge-detail.open.static-detail .swiper-container {
+		margin-right: 380px;
+	}
+	.brxy-sinlge-detail .brxy-project-detail {
+		width: 380px;
+		-webkit-transform: translateX(380px);
+		-ms-transform: translateX(380px);
+		transform: translateX(380px);
+	}
+	.brxy-project-detail .project-controls a {
+		padding: 17px 40px;
+	}
+	.brxy-quote.style2, .brxy-quote.style4 {
+		height: 400px;
+	}
+	.brxy-quote.style2 .quote-title {
+		font-size: 40px;
+	}
+	.brxy-quote.style3 .quote-title, .brxy-quote.style4 .quote-title {
+		font-size: 45px;
+	}
+	/* Brxy About Me Page CSS */
+	.about-me-info {
+		padding: 10%;
+	}
+	.about-me-info p {
+		margin-bottom: 15px;
+	}
+	/* Brxy Services Page CSS */
+	.brxy-services.style2 .service-item {
+		margin-bottom: 30px;
+	}
+	.brxy-services.style2 .service-item:last-child {
+		margin-bottom: 0;
+	}
+	.brxy-services.style2 [class*="col-"] {
+		width: 50%;
+	}
+	.service-info {
+		height: auto;
+		padding: 50px;
+	}
+	.service-picture {
+		width: 50%;
+	}
+	.service-picture img {
+		border: none;
+	}
+	.brxy-services.style2 .service-item:nth-child(2n) .service-picture img {
+		border-right: none;
+	}
+	/* Brxy Blog Page CSS */
+	.blog-info {
+		padding: 20px 0 10px;
+	}
+	.post-title {
+		padding-bottom: 10px;
+	}
+	.brxy-read-more {
+		padding-top: 10px;
+	}
+	/* Brxy Blog Single Page CSS */
+	.brxy-unit-fix .blog-picture {
+		margin: 0 -100px;
+	}
+	.entry-content .comment-list .children {
+    padding-left: 20px;
+  }
+  /* Brxy 404 Page CSS */
+  .brxy-404-error {
+  	padding: 200px 0 250px;
+  }
+  /* Brxy Single Vertical Stack Page CSS */
+  .brxy-project-detail.style2 .brxy-container, .brxy-project-detail.style3 .brxy-container {
+  	width: auto;
+  }
+}
+
+@media screen and (max-width:1024px) { .menu-style-three  .brxy-menu .overlay-menu{padding-left: 0 !important;}}
+
+
+@media screen and (max-width:991px) {
+	/* Brxy Normal CSS */
+		.service-info {
+		height: auto;
+		padding: 50px;
+	}
+	.service-picture {
+		width: 100%;
+	}
+	.brxy-services.style2 [class*="col-"] {
+		width: 100%;
+		max-width: 100%;
+	}
+	.service-item {
+		display: block;
+	}
+	.team-col-five {
+	  width: 33.333%;
+	}
+	.project-col-5 {
+	    width: 25%;
+	}
+	.team-wrap{
+		text-align: center;
+	}
+	.team-col-five:nth-last-child(2), .team-col-five:nth-last-child(1) {
+		float: none;
+		display: inline-block;
+	}
+	.brxy-container {
+		width: auto;
+	}
+	.header-wrap {
+		padding: 0 25px;
+	}
+	.brxy-heading-wrap .brxy-heading {
+		font-size: 36px;
+		line-height: 48px;
+	}
+	.brxy-full-page .secondary-footer-wrap {
+		padding: 13px 25px;
+	}
+	.brxy-status {
+		padding: 25px;
+	}
+	.brxy-status [class*="col-"]:nth-child(2n) .status-list {
+		border-right: none;
+	}
+	.brxy-status [class*="col-"]:last-child .status-list, .brxy-status [class*="col-"]:nth-last-child(-n+2) .status-list {
+		border-bottom: none;
+	}
+	.status-list {
+		margin: 0;
+		border-bottom: 1px solid rgba(232, 232, 232, 0.06);
+	}
+	.brxy-testimonial p {
+		font-size: 20px;
+	}
+	.brxy-promo {
+		height: auto;
+		text-align: center;
+	}
+	 .brxy-promo .promo-image {height: 450px;}
+	 .brxy-promo .promo-wrap {padding-top: 40px; padding-bottom: 50px}
+
+	.brxy-promo .promo-picture {
+		height: 400px;
+	}
+	.promo-wrap {
+		padding: 100px;
+	}
+	.brxy-info-title .info-title {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.quote-title {
+		font-size: 36px;
+	}
+	.brxy-title-1 br, .brxy-footer br {
+		display: none;
+	}
+	.brxy-masonry .masonry-item, .brxy-masonry.masonry-item-5 .masonry-item, .brxy-masonry.masonry-item-4 .masonry-item, .brxy-masonry .masonry-item.col-md-1, .brxy-masonry .masonry-item.col-md-2, .brxy-masonry .masonry-item.col-md-3, .brxy-masonry .masonry-item.col-md-4, .brxy-masonry .masonry-item.col-md-5, .brxy-masonry .masonry-item.col-md-6, .brxy-masonry .masonry-item.col-md-7, .brxy-masonry .masonry-item.col-md-8, .brxy-masonry .masonry-item.col-md-9, .brxy-masonry .masonry-item.col-md-10, .brxy-masonry .masonry-item.col-md-11 {
+		width: 50%;
+	}
+	.brxy-masonry.spacer5 {
+		margin: 0 -15px;
+	}
+	.brxy-masonry.spacer5 .masonry-item {
+		padding: 0 15px 30px;
+	}
+	.brxy-masonry-wrap.no-spacer .filter-buttons {
+		padding-top: 10px;
+	}
+	.filter-buttons {
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	.filter-buttons .brxy-title-1 {
+		width: 100%;
+	}
+	.filter-buttons .brxy-menu {
+		float: left;
+		width: 100%;
+		padding: 20px 0;
+		white-space: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	.filter-buttons .brxy-menu > li {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 10px;
+	}
+	.filter-buttons > .nav-tabs.brxy-menu .filter-by {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.filter-buttons > .nav-tabs.brxy-menu > li, .filter-buttons .tab-content .brxy-menu > li {
+		padding: 0 10px;
+	}
+	.filter-buttons .tab-content {
+		margin-top: 10px;
+	}
+	.filter-style2 .filter-buttons {
+		width: 60%;
+		padding: 0 0 10px;
+		margin: 0 auto;
+	}
+	.filter-style2 .filter-buttons .brxy-menu {
+		padding: 20px 0 22px;
+		text-align: center;
+	}
+	.swiper-slide.col-md-1, .swiper-slide.col-md-2, .swiper-slide.col-md-3, .swiper-slide.col-md-4, .swiper-slide.col-md-5, .swiper-slide.col-md-6, .swiper-slide.col-md-7, .swiper-slide.col-md-8, .swiper-slide.col-md-9, .swiper-slide.col-md-10, .swiper-slide.col-md-11 {
+		width: 75%;
+	}
+	.brxy-sidebar {
+		padding-top: 20px;
+		padding-left: 15px;
+		margin-top: 20px;
+		border-top: 1px solid #e5e5e5;
+	}
+	.brxy-sidebar.left-sidebar {
+		padding-right: 15px;
+	}
+	.brxy-sidebar:before {
+		display: none;
+	}
+	.has-left-sidebar {
+		float: none;
+	}
+	/* Brxy About Page CSS */
+	.brxy-progressbar {
+		padding-top: 20px;
+	}
+	/* Brxy About Me Page CSS */
+	.brxy-about-me, .brxy-about-me [class*="col-"] {
+		height: auto;
+	}
+	.brxy-about-me [class*="col-"] {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.brxy-about-me .about-picture {
+		height: 600px;
+	}
+	/* Brxy Service And Cost Page CSS */
+	.brxy-service-detail .nav-tabs > li > a > span {
+		padding: 6px 20px;
+		font-size: 12px;
+	}
+	/* Brxy Blog Single Page CSS */
+	.brxy-unit-fix .blog-picture {
+		margin: 0;
+	}
+	.brxy-unit-fix {
+		width: 100%;
+	}
+	.brxy-unit-fix .post-title {
+		font-size: 28px;
+	}
+	/* Brxy Contact Page CSS */
+	.brxy-map {
+		height: 500px;
+	}
+	/* Brxy Get A Quote Page CSS */
+	.brxy-get-quote .info-title {
+		padding-bottom: 10px;
+	}
+	/* Brxy Projects Wide With Gutter Page CSS */
+	.project-listings.style5 .project-info {
+		padding: 17px 25px;
+	}
+	/* Brxy Single Vertical Stack Page CSS */
+  .brxy-project-detail.style2 .brxy-container br {
+  	display: none;
+  }
+  .vertical-scroll.mCustomScrollbar {
+  -ms-touch-action: auto;
+  touch-action: auto;
+  }
+  
+}
+
+@media screen and (max-width:899px) {
+	/* Brxy Normal CSS */
+	.owl-drag .owl-prev:before {
+		left: 0;
+	}
+	.owl-drag .owl-next:before {
+		right: 0;
+	}
+	.header-wrap {
+		padding: 15px 25px;
+	}
+	.header-wrap .brxy-menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 239px;
+		padding: 0 25px;
+		background: #ffffff;
+		overflow: auto;
+		border-top: 1px solid #eeeeee;
+		-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+		-ms-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+	.header-wrap .brxy-menu > li {
+		width: 100%;
+	}
+	.header-wrap .brxy-menu > li > a {
+		padding: 12px 20px 12px 0;
+	}
+	.header-wrap .brxy-menu .menu-item-has-children > a:after {
+		position: absolute;
+		top: 11px;
+		right: 0;
+		color: #aeaeae;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 17px;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		content: "\f107";
+		z-index: 1;
+	}
+	.header-wrap .brxy-menu .menu-item-has-children:hover > .sub-menu {
+		display: block;
+	}
+	.header-wrap .brxy-menu .sub-menu {
+		display: none;
+		position: static;
+		float: left;
+		width: 100%;
+		min-width: 100%;
+		padding: 0 0 0 10px;
+		-webkit-box-shadow: none;
+		-ms-box-shadow: none;
+		box-shadow: none;
+	}
+	.header-wrap .brxy-menu .sub-menu > li > a {
+		padding: 8px 20px 8px 0;
+	}
+	.brxy-logo {
+		padding-top: 0;
+	}
+	.menu-style-two .header-wrap {
+		padding-right: 25px;
+	}
+	.menu-style-two .brxy-menu {
+		opacity: 0;
+		visibility: hidden;
+	}
+	.menu-style-two .brxy-menu.open {
+		opacity: 1;
+		visibility: visible;
+	}
+	.filter-buttons .brxy-menu {opacity: 1;visibility: visible;}
+	.menu-style-two .brxy-toggle {
+		color:red;
+		display: inline-block;
+	}
+	.header-style-two .header-wrap {
+		padding: 30px;
+	}
+	.header-style-two .brxy-menu > li > a {
+		color: #888888
+	}
+	.header-style-two .brxy-menu > li:hover > a, .header-style-two .brxy-menu > li.active > a {
+		color: #555555;
+		opacity: 1;
+	}
+	.menu-style-three .header-wrap .brxy-logo, .menu-style-three .header-wrap .header-right {
+		padding: 0;
+	}
+	.menu-style-three .header-wrap .brxy-menu {
+		border-top: none;
+		-webkit-box-shadow: none;
+		-ms-box-shadow: none;
+		box-shadow: none;
+	}
+	.menu-style-three .header-wrap .brxy-menu .brxy-align-container {
+		padding: 60px 0 100px;
+	}
+	.menu-style-three .header-wrap .brxy-menu .sub-menu > li > a {
+		padding: 0;
+	}
+	.menu-style-three .header-wrap .brxy-menu li.menu-item > a:after {
+		top: auto;
+	}
+	.menu-style-three .header-wrap .brxy-menu .menu-item:hover > .sub-menu {
+		display: none;
+	}
+	.menu-style-three .header-wrap .brxy-menu .brxy-social {
+		bottom: 30px;
+	}
+	.promo-wrap {
+		padding: 70px 50px;
+	}
+	.client-item img {
+		max-width: 160px;
+	}
+	.brxy-about {
+		padding: 75px 0 50px;
+	}
+	.brxy-projects {
+		padding: 72px 60px 80px;
+	}
+	.brxy-testimonial {
+		padding: 100px 0 88px;
+	}
+	.brxy-team, .brxy-team.style2 {
+		padding: 83px 0 55px;
+	}
+	.brxy-clients {
+		padding: 72px 0 80px;
+	}
+	.brxy-mid-wrap {
+		padding: 70px 0;
+	}
+	.brxy-masonry-wrap {
+  	padding: 70px 0;
+  	}
+	.brxy-footer {
+		padding: 64px 0 69px;
+	}
+	/* Brxy About Page CSS */
+	.brxy-itroduction {
+		padding: 70px 0 50px;
+	}
+	.brxy-awards {
+		padding: 74px 0 52px;
+	}
+	/* Brxy Contact Page CSS */
+	.brxy-contact-info, .brxy-location {
+		padding: 70px 0 90px;
+	}
+	.brxy-map {
+		height: 400px;
+	}
+	/* Brxy Get A Quote Page CSS */
+	.brxy-get-quote {
+		padding: 70px 0;
+	}
+	/* Brxy 404 Page CSS */
+  .brxy-404-error {
+  	padding: 150px 0 200px;
+  }
+  /* Brxy Single Custom 2 Page CSS */
+  .project-plan.spacer3 {
+  	padding: 80px 0;
+  }
+    /* Brxy Normal CSS */
+  .dark-version .header-wrap .brxy-menu {
+    background: #191919;
+    border-color: #333333;
+  }
+  .dark-version .brxy-menu .dropdown {
+    background: none;
+  }
+}
+@media screen and (max-width:800px) {
+
+  .brxy-social a {margin-left: 7px;}
+	.brxy-promo .promo-image {height: 520px;}
+	.brxy-service-detail .nav-tabs > li > a > span {line-height: 35px;}
+
+}
+
+@media screen and (max-width:799px) {
+	/* Brxy Normal CSS */
+	.container {
+		padding: 0 25px;
+	}
+	.brxy-masonry-wrap.spacer2 .container, .brxy-masonry-wrap.no-spacer .container, .brxy-full-page .secondary-footer-wrap .container {
+		padding: 0;
+	}
+	.project-col-5 {
+	    width: 50%;
+	}
+}
+@media only screen and (max-width: 782px) {
+	.admin-bar .sticky-wrapper.is-sticky .brxy-header.brxy-sticky-class {
+		top: 46px !important;
+	}
+	.admin-bar .brxy-sinlge-detail .brxy-project-detail {
+	  margin-top: 46px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.admin-bar .sticky-wrapper.is-sticky .brxy-header.brxy-sticky-class {
+		top: 0 !important;
+	}
+}
+@media screen and (min-width:768px) {
+	/* Brxy Normal CSS */
+	.brxy-full-page .sticky-wrapper {
+		height: auto !important;
+	}
+		/* Brxy Contact Page CSS */
+	.brxy-form form [class*="col-"].last input {
+		border-left-color: transparent;
+	}
+	.brxy-social a {
+    margin-left: 5px;
+}
+.brxy-promo .promo-wrap {padding: 30px 65px !important;}
+.secondary-footer-wrap .text-right {text-align:center;}
+.brxy-location .location-list {padding-top: 30px;padding-bottom: 25px;}
+}
+
+@media screen and (max-width:767px) {
+	html.fullheight-body{
+	  overflow: scroll !important;
+	}
+	.brxy-promo .promo-wrap {padding: 30px 20px !important;}
+	/* Brxy Normal CSS */
+	.team-col-five {
+	  width: 50%;
+	}
+	.contact-list .brxy-social.circle-social {float: none;}
+	.team-wrap{
+		text-align: center;
+	}
+	.team-col-five:nth-last-child(2){
+		float: left;
+		display: block;
+	}
+	.team-col-five:nth-last-child(1) {
+		float: none;
+		display: inline-block;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+	h1, .h1 {
+		font-size: 26px;
+	}
+	h2, .h2 {
+		font-size: 24px;
+	}
+	h3, .h3 {
+		font-size: 20px;
+	}
+	blockquote {
+		min-height: 70px;
+		padding: 10px 0 10px 60px;
+		margin: 0;
+	}
+	blockquote:before {
+		width: 40px;
+		height: 40px;
+	}
+	textarea, textarea.form-control {
+		height: 120px;
+	}
+	form input, form textarea, form select {
+		margin-bottom: 15px;
+	}
+	form input[type="submit"], form input[type="button"], form button {
+		margin: 10px 0;
+	}
+	.row {
+		margin: 0;
+	}
+	.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+		padding: 0;
+	}
+	.brxy-full-page {
+		padding: 0 !important;
+	}
+	.brxy-heading-wrap {
+		padding: 25px 40px;
+		overflow: auto;
+	}
+	.brxy-heading-wrap .brxy-btn-small {
+		padding: 12px 25px;
+	}
+	.brxy-heading-wrap .brxy-sub-heading {
+		padding-bottom: 5px;
+		font-size: 12px;
+	}
+	.brxy-heading-wrap .brxy-heading {
+		padding-bottom: 10px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.swiper-button-prev {
+		left: 0;
+	}
+	.swiper-button-next {
+		right: 0;
+	}
+	.swiper-pagination {
+		display: none;
+		bottom: 15px;
+	}
+	.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom {
+		bottom: 15px;
+	}
+	.header-style-two .header-wrap {
+		padding: 20px 25px;
+	}
+	.menu-style-three .header-wrap .brxy-menu {
+		font-size: 30px;
+	}
+	.menu-style-three .header-wrap .brxy-menu .sub-menu {
+		padding: 15px 0 5px;
+	}
+	.brxy-about {
+		padding: 25px 0 0;
+	}
+	.brxy-about .about-title {
+		margin-bottom: 5px;
+	}
+	.brxy-about .about-title br {
+		display: none;
+	}
+	.brxy-about p {
+		font-size: 15px;
+	}
+	.brxy-services {
+		padding-top: 15px;
+	}
+	.service-item {
+		margin-bottom: 25px;
+	}
+	.service-item .service-wrap {
+		padding: 43px 25px 53px;
+	}
+	.brxy-status {
+		padding: 0 25px;
+	}
+	.status-list {
+		padding: 24px 25px 34px;
+		border-right: none;
+	}
+	.brxy-status [class*="col-"]:nth-last-child(-n+2) .status-list {
+		border-bottom: 1px solid rgba(232, 232, 232, 0.06);
+	}
+	.brxy-status [class*="col-"]:last-child .status-list {
+		border-bottom: none;
+	}
+	.brxy-projects {
+		padding: 30px 25px;
+	}
+	.brxy-title-wrap {
+		padding-bottom: 20px;
+	}
+	.brxy-title-wrap .section-title {
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+	.brxy-title-wrap .section-sub-title {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.project-list {
+		margin-bottom: 25px;
+	}
+	.project-info {
+		padding: 20px 0 0;
+	}
+	.brxy-testimonial {
+		padding: 40px 0;
+	}
+	.brxy-testimonial p {
+		font-size: 18px;
+	}
+	.brxy-testimonial h6 {
+		padding-top: 5px;
+	}
+	.owl-drag .owl-dots {
+		padding-top: 15px;
+	}
+	.owl-drag .owl-prev:before {
+		left: -15px;
+	}
+	.owl-drag .owl-next:before {
+		right: -15px;
+	}
+	.brxy-team {
+		padding: 30px 0 0;
+	}
+	.mate-info {
+		padding: 15px 0 10px;
+	}
+	.brxy-staffs {
+		padding-top: 20px;
+		margin-top: 0;
+	}
+	.brxy-staffs [class*="col-"] {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	.brxy-staffs .staff-type {
+		margin-bottom: 15px;
+	}
+	.brxy-promo .promo-picture {
+		height: 300px;
+	}
+	.promo-wrap {
+		padding: 30px 25px;
+	}
+	.promo-info p {
+		font-size: 15px;
+	}
+	.promo-info .promo-title {
+		padding-bottom: 5px;
+	}
+	.promo-info .clearfix {
+		padding-top: 10px;
+	}
+	.brxy-clients {
+		padding: 30px 0 25px;
+	}
+	.brxy-info-title {
+		padding-bottom: 15px;
+	}
+	.brxy-info-title br {
+		display: none;
+	}
+	.brxy-info-title .info-title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.brxy-info-title .info-sub-title {
+		padding-bottom: 0;
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.brxy-info-title.style2 {
+		padding-bottom: 15px;
+	}
+	.brxy-info-title.style2 .info-title {
+		padding-bottom: 5px;
+	}
+	.brxy-info-title.style2 .info-sub-title {
+		padding-bottom: 15px;
+	}
+	.brxy-title-1 {
+		padding-bottom: 10px;
+		font-size: 18px;
+	}
+	.progress {
+		margin-bottom: 25px;
+	}
+	.brxy-quote, .brxy-quote.style2, .brxy-quote.style4 {
+		height: auto;
+	}
+	.brxy-quote.style2 .quote-title {
+		font-size: 26px;
+	}
+	.quote-wrap {
+		padding: 70px 0;
+	}
+	.quote-title {
+		padding-bottom: 5px;
+		font-size: 26px;
+	}
+	.quote-sub-title {
+		font-size: 18px;
+	}
+	.brxy-quote.style3 .quote-title, .brxy-quote.style4 .quote-title {
+		font-size: 30px;
+	}
+	.brxy-load-more {
+		margin-top: 5px;
+	}
+	.brxy-request-quote {
+		padding: 40px 0;
+	}
+	.brxy-request-quote h3 {
+		font-size: 20px;
+	}
+	.brxy-mid-wrap {
+		padding: 30px 0;
+	}
+	.nav-tabs {
+		padding-bottom: 15px;
+	}
+	.brxy-masonry, .brxy-masonry.spacer2, .brxy-masonry.spacer3, .brxy-masonry.spacer4, .brxy-masonry.spacer5 {
+		margin: 0;
+	}
+	.brxy-masonry .masonry-item, .brxy-masonry.masonry-item-5 .masonry-item , .brxy-masonry.masonry-item-4 .masonry-item {
+		/*width: 100%;*/
+		/*padding: 0 0 25px;*/
+	}
+	.brxy-masonry.masonry-item-2 .masonry-item, .brxy-masonry .masonry-item.col-md-1, .brxy-masonry .masonry-item.col-md-2, .brxy-masonry .masonry-item.col-md-3, .brxy-masonry .masonry-item.col-md-4, .brxy-masonry .masonry-item.col-md-5, .brxy-masonry .masonry-item.col-md-6, .brxy-masonry .masonry-item.col-md-7, .brxy-masonry .masonry-item.col-md-8, .brxy-masonry .masonry-item.col-md-9, .brxy-masonry .masonry-item.col-md-10, .brxy-masonry .masonry-item.col-md-11 {
+		/*width: 100%;*/
+	}
+	.brxy-masonry.spacer2 .masonry-item, .brxy-masonry.spacer3 .masonry-item, .brxy-masonry.spacer4 .masonry-item, .brxy-masonry-wrap.no-spacer .masonry-item, .brxy-masonry.spacer5 .masonry-item, .brxy-masonry.masonry-item-1 .masonry-item {
+		/*padding: 0 0 25px;*/
+	}
+	.brxy-masonry-wrap {
+  	/*padding: 25px 0 0;*/
+  }
+  .brxy-masonry-wrap.spacer2 {
+  	padding: 25px 25px 0;
+  }
+  .brxy-masonry-wrap.no-spacer {
+  	padding: 25px 25px 0;
+  }
+  .brxy-masonry-wrap.no-spacer .filter-buttons {
+  	padding-top: 0;
+  }
+  .filter-buttons {
+  	padding-bottom: 0;
+  }
+  .filter-buttons .brxy-menu {
+  	padding: 12px 0 15px;
+  }
+  .filter-buttons .tab-content {
+  	padding-top: 15px;
+  	margin-top: 0;
+  }
+  .filter-style2 .filter-buttons {
+  	width: auto;
+  	padding-right: 130px;
+  }
+  .filter-style2 .filter-buttons .brxy-menu {
+  	padding: 2px 0 20px;
+  	text-align: left;
+  }
+  .filter-style2 .filter-buttons .brxy-menu > li {
+  	padding: 0 20px 0 0;
+  }
+  .swiper-slide.col-md-1, .swiper-slide.col-md-2, .swiper-slide.col-md-3, .swiper-slide.col-md-4, .swiper-slide.col-md-5, .swiper-slide.col-md-6, .swiper-slide.col-md-7, .swiper-slide.col-md-8, .swiper-slide.col-md-9, .swiper-slide.col-md-10, .swiper-slide.col-md-11 {
+		width: 85%;
+	}
+	.brxy-sinlge-detail.open .swiper-container {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+	.brxy-sinlge-detail.open.static-detail .swiper-container {
+		margin-right: 0;
+	}
+	.brxy-sinlge-detail .brxy-project-detail {
+		position: static;
+		width: 100%;
+		padding: 0;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+	.admin-bar .brxy-sinlge-detail .brxy-project-detail {
+	  margin-top: 0px;
+	}
+	.brxy-project-detail .project-controls {
+		position: static;
+	}
+	.brxy-project-detail .project-controls a {
+		padding: 15px 20px;
+	}
+	.brxy-full-wrap.brxy-sinlge-detail {
+		height: auto;
+	}
+	.brxy-sinlge-detail .swiper-container {
+		height: auto;
+	}
+	.brxy-sinlge-detail .swiper-container .swiper-wrapper, .fullscreen-video .swiper-container {
+		height: 400px;
+	}
+	.brxy-sinlge-detail .project-detail-wrap {
+		height: auto;
+		padding: 25px 25px 30px;
+	}
+	.brxy-sinlge-detail .brxy-project-detail .project-title {
+		margin-bottom: 12px;
+	}
+	.brxy-project-detail .detail-wrap {
+		padding: 0;
+	}
+	.brxy-sinlge-detail .brxy-project-detail .brxy-btn {
+		margin-top: 20px;
+	}
+	.brxy-sinlge-detail.fullscreen .brxy-expand-btn {
+		right: 15px;
+	}
+	.brxy-expand-btn {
+		top: 15px;
+		right: 15px;
+	}
+	.brxy-info-btn {
+		display: none;
+	}
+	.brxy-project-detail {
+		padding: 30px 0;
+	}
+	.brxy-project-detail .project-title {
+		margin-bottom: 5px;
+	}
+	.project-galleries {
+		padding-top: 25px;
+	}
+	.project-plan, .project-plan.spacer2 {
+		padding: 0;
+	}
+	.project-plan.spacer3 {
+		padding: 25px 0;
+	}
+	.plan-title-wrap .plan-title {
+		padding-bottom: 5px;
+		font-size: 26px;
+	}
+	.plan-map {
+		margin-top: 25px;
+	}
+	.project-controls {
+		font-size: 12px;
+	}
+	.project-controls a {
+		padding: 15px 20px;
+	}
+	.project-controls .grid-links, .brxy-project-detail .project-controls .grid-links {
+		padding: 20px 32px 20px 18px;
+	}
+	.mfp-zoom-out-cur .mfp-close {
+		top: 15px;
+		right: 15px;
+	}
+	.animation-btn {
+		bottom: 15px;
+		font-size: 24px;
+	}
+	.brxy-sidebar {
+		padding-top: 15px;
+		margin-top: 25px;
+	}
+	.brxy-sidebar.left-sidebar {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.brxy-widget {
+		padding-bottom: 15px;
+	}
+	.brxy-widget:last-child {
+		padding-bottom: 0;
+	}
+	.widget-title {
+		font-size: 18px;
+	}
+	.brxy-full-page .brxy-secondary-footer {
+		position: static;
+	}
+	.brxy-full-page .secondary-footer-wrap {
+		padding: 25px 25px 20px;
+	}
+	.brxy-footer {
+		padding: 30px 0 5px;
+	}
+	.brxy-column-title {
+		margin-bottom: 10px;
+	}
+	.column-wrap {
+		padding-bottom: 20px;
+	}
+	.secondary-footer-wrap {
+		padding: 25px 0 20px;
+		text-align: center;
+	}
+	.secondary-footer-wrap .text-right{text-align: center !important;}
+	.brxy-copyright {
+		width: 100%;
+		padding: 0 0 10px;
+	}
+	.secondary-footer-wrap .brxy-social {
+		text-align: center;
+		width: 100%;
+	}
+	.brxy-social a {
+		margin: 0 5px 5px;
+	}
+	/* Brxy About Page CSS */
+	.brxy-itroduction {
+		padding: 25px 0 5px;
+	}
+	.brxy-itroduction p {
+		font-size: 15px;
+	}
+	.about-picture {
+		padding-bottom: 20px;
+	}
+	.brxy-progressbar {
+		padding-top: 10px;
+	}
+	.brxy-team.style2 {
+		padding: 30px 0 10px;
+	}
+	.brxy-awards {
+		padding: 25px 0 5px;
+	}
+	.brxy-awards .brxy-title-1 {
+		font-size: 18px;
+	}
+	.award-item {
+		padding-bottom: 0;
+	}
+	.award-item [class*="col-"] {
+		padding-bottom: 5px;
+	}
+	.award-info .award-year {
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+	}
+	/* Brxy About Me Page CSS */
+	.brxy-about-me .about-picture {
+		height: 400px;
+	}
+	.about-me-info p {
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+	.about-me-info {
+		padding: 30px;
+	}
+	.about-me-info .contact-link {
+		padding-bottom: 15px;
+	}
+	/* Brxy Services Page CSS */
+	.brxy-services.style2 .service-item {
+		margin-bottom: 25px;
+	}
+	.services-wrap {
+		padding: 0;
+	}
+	.service-info {
+		padding: 20px;
+	}
+	.service-info i {
+		padding-bottom: 10px;
+	}
+	.service-info ul {
+		padding-top: 5px;
+	}
+	.service-info .service-title {
+		margin-bottom: 10px;
+	}
+	/* Brxy Service And Cost Page CSS */
+	.brxy-service-detail h6 {
+		padding-top: 5px;
+		margin-bottom: 5px;
+	}
+	.brxy-service-detail .tab-content ul li:last-child {
+		margin-bottom: 0;
+	}
+	.brxy-service-detail .services-wrap {
+		padding-top: 0;
+	}
+	.brxy-service-detail .nav-tabs {
+		margin: 0 -5px;
+	}
+	.brxy-service-detail .nav-tabs > li {
+		width: 50%;
+		padding: 0 5px 10px;
+	}
+	.brxy-service-detail .nav-tabs > li > a:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		content: "";
+		-webkit-transition: all ease .3s;
+		-ms-transition: all ease .3s;
+		transition: all ease .3s;
+		z-index: 1;
+	}
+	.brxy-service-detail .nav-tabs > li.active > a:before {
+		background: rgba(0, 0, 0, 0.2);
+	}
+	.brxy-service-detail .nav-tabs > li > a > span {
+		min-width: 100%;
+		padding: 10px;
+		background: none;
+		color: #ffffff;
+		line-height: 25px;
+		z-index: 2;
+	}
+	.brxy-service-detail .nav-tabs > li.active > a > span {
+		background: none;
+	}
+	.next-service {
+		margin-top: 10px;
+	}
+	/* Brxy Blog Page CSS */
+	.blog-info {
+		padding: 15px 0 0;
+	}
+	.blog-info p {
+		margin-bottom: 8px;
+	}
+	.post-title {
+		padding-bottom: 8px;
+		font-size: 18px;
+	}
+	.brxy-read-more {
+		padding-top: 5px;
+	}
+	/* Brxy Blog Single Page CSS */
+	.brxy-unit-fix {
+		padding-top: 0;
+	}
+	.brxy-unit-fix .brxy-blog-detail p {
+		line-height: 26px !important;
+	}
+	.brxy-unit-fix .brxy-blog-detail h1, .brxy-unit-fix .brxy-blog-detail h2, .brxy-unit-fix .brxy-blog-detail h3, .brxy-unit-fix .brxy-blog-detail h4, .brxy-unit-fix .brxy-blog-detail h5, .brxy-unit-fix .brxy-blog-detail h6 {
+		padding-top: 2px;
+		margin-bottom: 5px;
+	}
+	.brxy-unit-fix .brxy-blog-detail ul, .brxy-unit-fix .brxy-blog-detail ol {
+		padding: 5px 0 5px 14px;
+		margin: 0;
+		line-height: 24px;
+	}
+	.brxy-unit-fix .brxy-blog-detail p span img {
+		margin: 10px 0;
+	}
+	.brxy-unit-fix .post-title {
+		padding-bottom: 20px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.brxy-unit-fix .blog-picture {
+		padding-bottom: 15px;
+	}
+	.brxy-unit-fix .brxy-bottom-meta {
+		padding: 0 0 15px;
+	}
+	.brxy-unit-fix .brxy-bottom-meta .brxy-tags ul {
+		padding: 5px 0 10px;
+	}
+	.brxy-unit-fix .brxy-more-posts {
+		padding: 20px 0;
+		margin-bottom: 25px;
+	}
+	.brxy-unit-fix .brxy-author {
+		padding: 20px;
+	}
+	.brxy-unit-fix .author-content {
+		padding-left: 20px;
+	}
+	.brxy-unit-fix .author-content p {
+		margin-bottom: 5px;
+	}
+	.brxy-unit-fix .author-content .author-name {
+		margin-bottom: 5px;
+	}
+	.brxy-unit-fix .brxy-comments-area {
+		padding-top: 15px;
+	}
+	.brxy-unit-fix .brxy-comments-area ol.children,
+	.brxy-unit-fix .brxy-comments-area ul.children {
+		padding: 0;
+	}
+	.brxy-unit-fix .brxy-comments-area .comments li .children li {padding-left: 0;}
+	.brxy-unit-fix .brxy-comments-area .comment-main-area {
+		padding-bottom: 20px;
+		margin-bottom: 15px;
+	}
+	.brxy-unit-fix .comments-reply {
+		padding-top: 0;
+	}
+	.brxy-unit-fix .brxy-comments-area .comments li .children li .comment-main-area {
+		padding-left: 25px;
+	}
+	.brxy-unit-fix .brxy-comment-form {
+		padding-top: 0;
+	}
+	.brxy-unit-fix .brxy-comment-form .brxy-form-inputs {
+		padding-bottom: 10px;
+	}
+	.brxy-unit-fix .brxy-comment-form input[type="submit"] {
+		margin-bottom: 0;
+	}
+	.brxy-unit-fix .brxy-comment-form .brxy-form-textarea textarea {
+		height: 120px;
+	}
+	.entry-content {
+    overflow-wrap: break-word;
+  }
+  .entry-content dd {
+    margin-bottom: 10px;
+  }
+  .wp-caption {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .entry-content .comment-list article, .entry-content .comment-list .pingback, .entry-content .comment-list .trackback {
+    padding: 20px 0;
+  }
+  .entry-content .comment-content ul, .entry-content .comment-content ol {
+    margin: 0 0 10px 0;
+  }
+  .entry-content .comment-metadata {
+    margin-bottom: 5px;
+  }
+  .entry-content .comment-list .comment-reply-link {
+    margin-top: 0;
+  }
+  .entry-content .comment-list .children {
+    padding-left: 10px;
+  }
+  .brxy-unit-fix .entry-content .comment-form {
+  	padding-top: 0;
+  }
+  .brxy-unit-fix .entry-content .comment-list article, .brxy-unit-fix .entry-content .comment-list .pingback, .brxy-unit-fix .entry-content .comment-list .trackback {
+  	padding: 15px 0 20px;
+  }
+  /* Brxy Contact Page CSS */
+	.brxy-contact-info {
+		padding: 25px 0;
+	}
+	.brxy-form form input[type="submit"] {
+		margin-top: 15px;
+	}
+	.brxy-contact-info form input[type="submit"] {
+		margin-bottom: 0;
+	}
+	.contact-list {
+		display: block;
+		overflow: hidden;
+		clear: both;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	.contact-list:last-child {
+		padding-bottom: 20px;
+	}
+	.contact-list p, .contact-list h6 {
+		margin-bottom: 5px;
+	}
+	.brxy-social.circle-social a {
+		margin: 0 2px 4px;
+	}
+	.brxy-form form select[multiple], .brxy-form form select[size] {
+		height: 120px;
+	}
+	.brxy-map {
+		height: 250px;
+	}
+	.brxy-location {
+		padding: 25px 0 5px;
+	}
+	.location-list {
+		padding-bottom: 25px;
+		text-align: center;
+	}
+	.location-list ul li {
+		margin-bottom: 5px;
+	}
+	.location-list .location-title {
+		margin-bottom: 5px;
+	}
+	.location-list .brxy-btn {
+		margin-top: 10px;
+	}
+	/* Brxy Get A Quote Page CSS */
+	.brxy-get-quote {
+		padding: 30px 0;
+	}
+	.brxy-get-quote form {
+		width: 100%;
+	}
+	.brxy-get-quote input[type="submit"] {
+		margin-bottom: 0;
+	}
+	.brxy-get-quote .info-title {
+		padding-bottom: 5px;
+	}
+	/* Brxy 404 Page CSS */
+  .brxy-404-error {
+  	padding: 50px 0 70px;
+  }
+  .brxy-404-error h1 {
+  	font-size: 100px;
+  	line-height: 100px;
+  }
+  .brxy-404-error h3 {
+  	font-size: 24px;
+  }
+  .brxy-404-error .brxy-btn {
+  	margin-top: 5px;
+  }
+  /* Brxy Projects Grid With Caption Page CSS */
+  .project-listings.style3 .project-info {
+  	padding: 15px 0 0;
+  }
+  .brxy-project-detail.style2 .project-title {
+  	margin-bottom: 10px;
+  	font-size: 18px;
+  }
+  .brxy-project-detail.style2 .detail-wrap {
+  	padding-top: 0;
+  }
+  .brxy-project-detail.style2 .detail-wrap li {
+  	padding: 10px 0;
+  }
+  .brxy-project-detail.style2 .project-galleries {
+  	padding: 20px 0 0;
+  }
+  /* Brxy Single Vertical Stack Page CSS */
+  .brxy-project-detail.style2 {
+  	padding-bottom: 5px;
+  }
+  /* Brxy Single Custom 1 Page CSS */
+  .brxy-project-detail.style3 {
+  	padding-bottom: 5px;
+  }
+  .brxy-project-detail.style3 .project-title {
+		margin-bottom: 10px;
+  }
+  .brxy-project-detail.style3 .brxy-btn {
+  	margin-bottom: 0;
+  }
+  .brxy-project-detail.style3 .detail-wrap {
+  	padding: 15px 0 0;
+  }
+  .brxy-project-detail.style3 .detail-wrap li {
+  	display: block;
+  	padding: 10px 0;
+  }
+  .brxy-project-detail.style3 .project-galleries {
+  	padding: 20px 0 0;
+  }
+}
+
+@media screen and (max-width:667px) {
+.brxy-masonry .masonry-item, .brxy-masonry.masonry-item-5 .masonry-item , .brxy-masonry.masonry-item-4 .masonry-item {
+		width: 100%;
+		padding: 0 0 25px;
+	}
+	.brxy-masonry.masonry-item-2 .masonry-item, .brxy-masonry .masonry-item.col-md-1, .brxy-masonry .masonry-item.col-md-2, .brxy-masonry .masonry-item.col-md-3, .brxy-masonry .masonry-item.col-md-4, .brxy-masonry .masonry-item.col-md-5, .brxy-masonry .masonry-item.col-md-6, .brxy-masonry .masonry-item.col-md-7, .brxy-masonry .masonry-item.col-md-8, .brxy-masonry .masonry-item.col-md-9, .brxy-masonry .masonry-item.col-md-10, .brxy-masonry .masonry-item.col-md-11 {
+		width: 100%;
+	}
+	.brxy-masonry.spacer2 .masonry-item, .brxy-masonry.spacer3 .masonry-item, .brxy-masonry.spacer4 .masonry-item, .brxy-masonry-wrap.no-spacer .masonry-item, .brxy-masonry.spacer5 .masonry-item, .brxy-masonry.masonry-item-1 .masonry-item {
+		padding: 0 0 25px;
+	}
+	.brxy-masonry-wrap {
+  	padding: 25px 0 0;
+  }
+
+}
+
+@media screen and (max-width:599px) {
+	/* Brxy Normal CSS */
+	select {
+		background-position: 96% 50%;
+	}
+	blockquote {
+		padding-left: 50px;
+	}
+	blockquote:before {
+		top: 15px;
+		width: 35px;
+		height: 35px;
+	}
+	blockquote p {
+		font-size: 16px;
+	}
+	.menu-style-three .header-wrap .brxy-menu {
+		font-size: 30px;
+	}
+	.menu-style-three .header-wrap .brxy-menu .brxy-social a {
+		font-size: 18px;
+	}
+	.brxy-about .about-title {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.promo-info .promo-title {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.quote-title, .brxy-quote.style2 .quote-title, .brxy-quote.style3 .quote-title, .brxy-quote.style4 .quote-title {
+		font-size: 24px;
+	}
+	.brxy-request-quote h3 {
+		font-size: 18px;
+	}
+	.plan-title-wrap .plan-title {
+		font-size: 24px;
+	}
+	/* Brxy About Page CSS */
+	.brxy-info-title .info-title {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	/* Brxy Services Page CSS */
+	.service-info .service-title {
+		font-size: 16px;
+	}
+	/* Brxy Service And Cost Page CSS */
+	.brxy-service-detail dl {
+		padding: 4px 0;
+	}
+	.brxy-service-detail dl dt, .brxy-service-detail dl dd {
+		width: 100%;
+	}
+	/* Brxy Blog Single Page CSS */
+	.brxy-unit-fix .post-title {
+		padding-bottom: 15px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.brxy-unit-fix .brxy-author {
+		text-align: center;
+	}
+	.brxy-unit-fix .author-avatar {
+		width: 100%;
+	}
+	.brxy-unit-fix .author-content {
+		clear: both;
+		padding: 15px 0 0;
+	}
+	.brxy-unit-fix .brxy-comment-form .brxy-form-inputs > input {
+		width: 100%;
+	}
+	.brxy-unit-fix .brxy-comment-form .brxy-form-inputs > input:nth-child(2n) {
+		border-right-color: #e5e5e5;
+	}
+	/* Brxy 404 Page CSS */
+  .brxy-404-error h1 {
+  	font-size: 80px;
+  	line-height: 80px;
+  }
+  .brxy-404-error h3 {
+  	font-size: 20px;
+  }
+}
+@media screen and (max-width:522px) {
+	.team-col-five {
+	  width: 100%;
+	}
+	.team-wrap{
+		text-align: center;
+	}
+	.team-col-five:nth-last-child(1) {
+		float: left;
+		display: block;
+	}
+}
+
+@media screen and (max-width:508px) {.about-description p {padding:0 15px;}}
+
+@media screen and (max-width:479px) {
+	/* Brxy Normal CSS */
+	.brxy-heading-wrap .brxy-heading {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.project-col-5 {
+	    width: 100%;
+	}
+	.brxy-title-wrap .section-title {
+		font-size: 18px;
+	}
+	.brxy-testimonial p {
+		font-size: 16px;
+	}
+	.promo-info .promo-title {
+		font-size: 18px;
+	}
+	.quote-title, .brxy-quote.style2 .quote-title {
+		font-size: 20px;
+	}
+	.quote-sub-title {
+		font-size: 16px;
+	}
+	.project-listings.style2 .project-info {
+		padding: 20px 25px;
+		line-height: 20px;
+	}
+	.project-listings.style3 .project-info {
+		line-height: 20px;
+	}
+	.project-listings.style4 .project-info {
+		padding: 20px;
+		line-height: 20px;
+	}
+	.project-listings.style5 .project-info {
+		padding: 15px 20px;
+		line-height: 22px;
+	}
+	.project-listings.style6 .project-info {
+		/*top: 0;*/
+		/*bottom: 0;*/
+		/*left: 0;*/
+		/*right: 0;*/
+		/*padding: 20px;*/
+		/*background: rgba(255, 255, 255, 0.95);*/
+		/*line-height: 22px;*/
+	}
+	.gallery-item .gallery-label {
+		bottom: 15px;
+		left: 15px;
+	}
+	.plan-title-wrap .plan-title {
+		font-size: 20px;
+	}
+	/* Brxy Service And Cost Page CSS */
+	.brxy-service-detail .nav-tabs {
+		margin: 0;
+	}
+	.brxy-service-detail .nav-tabs {
+		padding-bottom: 0;
+	}
+	.brxy-service-detail .nav-tabs > li {
+		width: 100%;
+		padding: 0 0 20px;
+	}
+	/* Brxy Blog Single Page CSS */
+	.brxy-unit-fix .post-title {
+		font-size: 17px;
+	}
+	.brxy-unit-fix .brxy-bottom-meta .brxy-tags ul {
+		padding-bottom: 5px;
+	}
+	.brxy-unit-fix .brxy-bottom-meta .brxy-share {
+		width: 100%;
+		padding-bottom: 15px;
+	}
+	.brxy-unit-fix .brxy-bottom-meta .brxy-likes {
+		float: left;
+		width: 100%;
+	}
+	.brxy-unit-fix .brxy-comments-area .comments li .children li .comment-main-area {
+		padding-left: 20px;
+	}
+	.brxy-unit-fix .brxy-comments-area h3 {
+		font-size: 14px;
+	}
+	.entry-content .comment-list .children {
+    padding-left: 0;
+  }
+  .brxy-unit-fix .entry-content .comment-list .children > li {
+    padding-left: 5px;
+  }
+  /* Brxy 404 Page CSS */
+  .brxy-404-error h1 {
+  	font-size: 72px;
+  	line-height: 72px;
+  }
+  .brxy-404-error h3 {
+  	font-size: 18px;
+  }
+}
+
+@media screen and (max-width:414px) {.brxy-service-detail .container {padding: 0 5px;} }
+@media screen and (max-width:359px) {
+	/* Brxy Normal CSS */
+	.promo-info .promo-title {
+		font-size: 17px;
+	}
+	.client-item img {
+		max-width: 130px;
+	}
+	.quote-title, .brxy-quote.style2 .quote-title, .brxy-quote.style3 .quote-title, .brxy-quote.style4 .quote-title {
+		font-size: 22px;
+	}
+	/* Brxy Services Page CSS */
+	.service-info .service-title {
+		font-size: 15px;
+	}
+
+}
+
+/* Retina Logo - Active */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.brxy-logo .black-logo.default-logo,
+	.dark-version .brxy-header .black-logo.default-logo,
+	.brxy-logo .white-logo.default-logo,
+	.dark-version .brxy-header .white-logo.default-logo {
+		display: none;
+	}
+	.dhav-transparent-header .brxy-logo .white-logo.retina-logo,
+	.header-style-two .black-logo.retina-logo,
+	.dark-version .brxy-header .black-logo.retina-logo {
+		display: none;
+	}
+	.brxy-logo .black-logo.retina-logo,
+	.brxy-logo .white-logo.retina-logo,
+	.dark-version .brxy-header .white-logo.retina-logo {
+		display: block;
+	}
+	.header-style-two .brxy-logo .white-logo.retina-logo {
+		display: block;
+	}
+
+}
+

@@ -1,0 +1,61 @@
+/* putihh.com — de-junk build overrides. Small, hand-written, no magic numbers. */
+
+/* Swiper 11 renders on the same .swiper-wrapper/.swiper-slide markup as the
+   old Swiper 3 the theme shipped with; only the root class changed
+   (swiper-container -> swiper). See assets/js/site.js for init. */
+
+/* Scroll-linked parallax bands (replaces WPBakery + skrollr, quarantined). */
+.brxy-parallax-band {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: background-position;
+}
+
+/* Vertical spacer, replaces WPBakery's vc_empty_space divs. */
+.spacer { display: block; }
+
+/* Utility: zero left/right padding on a row when it must sit flush
+   (replaces WPBakery's per-row vc_custom_XXXX hash classes). */
+.u-flush { padding-left: 0; padding-right: 0; }
+
+/* Isotope filter: active state (theme CSS already styles .active via
+   :before underline on .filter-buttons .brxy-menu > li > a.active). */
+
+/* Contact / about page real-content cards reuse .contact-list and
+   .location-list from brixey-styles.css as-is. */
+
+/* Hover reveals (theme originally toggled a .brxy-hover class via jQuery
+   .hover(); replaced with plain CSS :hover/:focus-within — same visual
+   result, no JS required, works for keyboard focus too). */
+.swiper-slide:hover .brxy-expand-btn,
+.swiper-slide:focus-within .brxy-expand-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+.gallery-item:hover .gallery-wrap:before,
+.gallery-item:hover .gallery-label {
+  opacity: 1;
+}
+.project-list:hover .project-picture img {
+  transform: scale(1.08);
+}
+
+/* Fix: on project detail pages the theme makes .brxy-header position:fixed
+   (via .brxy-full-page, needed so the fullscreen slider runs edge to edge)
+   but .brxy-header keeps a solid white background — the theme's own
+   "transparent header" option has no matching CSS anywhere in the capture,
+   so it never did anything, live site included. Left as captured, the
+   fixed opaque header sits on top of the "Details" toggle and the
+   prev/next controls at their default top:20px, making both unclickable.
+   Nudging them below the header's real height (~68px) is the minimal fix;
+   nothing else about the layout changes. */
+.brxy-full-page .brxy-sinlge-detail.fullscreen .brxy-info-btn {
+  top: 88px;
+}
+.brxy-full-page .brxy-sinlge-detail.fullscreen .brxy-expand-btn {
+  top: 88px;
+}
+.brxy-full-page .brxy-project-detail .project-controls {
+  top: 68px;
+}

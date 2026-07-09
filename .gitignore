@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+build.py
+*.mjs
+package.json
+package-lock.json
