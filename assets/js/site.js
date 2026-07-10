@@ -1,5 +1,5 @@
 /*
- * putihh.com — de-junk build glue.
+ * putihh.com: de-junk build glue.
  * Replaces the WPBakery/theme JS bundle (quarantined, malware-infected) with
  * clean, pinned upstream libraries: Swiper 11.2.6, Owl Carousel 2.3.4,
  * Magnific Popup 1.1.0, Isotope 3.0.6. No jQuery plugin here does anything
@@ -102,18 +102,23 @@
   }
 
   function initParallaxBands() {
-    var bands = document.querySelectorAll("[data-vc-parallax-image]");
+    // The background-image itself ships inline in the HTML (eager, paints
+    // immediately, no flash of the .brxy-overlay scrim colour while JS
+    // loads). This function only handles the scroll-linked pan.
+    var bands = document.querySelectorAll(".brxy-parallax-band");
     if (!bands.length) return;
-    bands.forEach(function (el) {
-      el.classList.add("brxy-parallax-band");
-      el.style.backgroundImage = "url(" + el.dataset.vcParallaxImage + ")";
-    });
     var ticking = false;
     function update() {
       bands.forEach(function (el) {
         var rect = el.getBoundingClientRect();
         var speed = parseFloat(el.dataset.vcParallax) || 0.2;
         var offset = rect.top * speed * -1;
+        // Clamp: background-size:cover only overflows the band by a limited
+        // amount. Past that, panning exposes the band's own background
+        // colour (the dark scrim) as a flat band. 50px stays well inside
+        // the cover overflow for this image/row pairing at both viewports.
+        var maxOffset = 50;
+        offset = Math.max(-maxOffset, Math.min(maxOffset, offset));
         el.style.backgroundPosition = "center calc(50% + " + offset + "px)";
       });
       ticking = false;
@@ -169,7 +174,7 @@
   function initProjectDetailToggle() {
     // Project detail pages: the fact panel (title/description/prev-next/
     // "View Projects") sits translateX(420px) off-screen by theme CSS
-    // until .brxy-sinlge-detail gets an .open class — originally toggled
+    // until .brxy-sinlge-detail gets an .open class, originally toggled
     // by the quarantined scripts.js "Details" button handler.
     var wrap = document.querySelector(".brxy-sinlge-detail");
     var btn = document.querySelector(".brxy-info-btn a");

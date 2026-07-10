@@ -1,4 +1,4 @@
-/* putihh.com — de-junk build overrides. Small, hand-written, no magic numbers. */
+/* putihh.com: de-junk build overrides. Small, hand-written, no magic numbers. */
 
 /* Swiper 11 renders on the same .swiper-wrapper/.swiper-slide markup as the
    old Swiper 3 the theme shipped with; only the root class changed
@@ -26,7 +26,7 @@
    .location-list from brixey-styles.css as-is. */
 
 /* Hover reveals (theme originally toggled a .brxy-hover class via jQuery
-   .hover(); replaced with plain CSS :hover/:focus-within — same visual
+   .hover(); replaced with plain CSS :hover/:focus-within, same visual
    result, no JS required, works for keyboard focus too). */
 .swiper-slide:hover .brxy-expand-btn,
 .swiper-slide:focus-within .brxy-expand-btn {
@@ -43,7 +43,7 @@
 
 /* Fix: on project detail pages the theme makes .brxy-header position:fixed
    (via .brxy-full-page, needed so the fullscreen slider runs edge to edge)
-   but .brxy-header keeps a solid white background — the theme's own
+   but .brxy-header keeps a solid white background: the theme's own
    "transparent header" option has no matching CSS anywhere in the capture,
    so it never did anything, live site included. Left as captured, the
    fixed opaque header sits on top of the "Details" toggle and the
@@ -101,4 +101,47 @@
 .swiper-button-prev:before,
 .swiper-button-next:before {
   content: none;
+}
+
+/* Change 5: home hero title ("UNIQUE HOMES IN PARADISE") matches the
+   heading typeface used across the sibling umahdibali.com site (Playfair
+   Display, self-hosted, see fonts.css). Family only, size unchanged. */
+.brxy-heading-wrap .brxy-heading {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Change 6: breathing room between the hero slider and the intro title
+   ("Unique locations..."). Theme shipped 0 top margin, title sat flush
+   under the slider. */
+.brxy-about .about-title {
+  margin-top: 56px;
+}
+@media screen and (max-width: 767px) {
+  .brxy-about .about-title {
+    margin-top: 36px;
+  }
+}
+
+/* Change 7: intro body copy under the title matches the "WHY INVEST IN
+   BALI?" section's body copy (colour already matched at 777777 via the
+   theme's global p rule; font-size didn't, 16px vs 15px). */
+.brxy-about .about-description p {
+  font-size: 15px;
+}
+
+/* Change 8: project-detail "Details" panel (.brxy-project-detail) is
+   position:fixed with top:0/bottom:0, a bounded box with no overflow
+   rule, so content taller than the viewport was clipped, not scrollable. */
+.brxy-sinlge-detail .brxy-project-detail {
+  overflow-y: auto;
+}
+
+/* Change 9: home project tiles now wrap the image in the same <a> as the
+   title (build.py). The theme's own hover-tint layer (.project-picture:
+   before, opacity:0, position:absolute, z-index:1) sits above that link in
+   the stacking order and silently ate every click. It's decorative only
+   (never visible, only ever toggled by a .brxy-hover class this build
+   doesn't use); let clicks pass through to the link underneath. */
+.project-picture:before {
+  pointer-events: none;
 }
