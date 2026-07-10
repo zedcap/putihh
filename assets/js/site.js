@@ -108,14 +108,21 @@
     var bands = document.querySelectorAll(".brxy-parallax-band");
     if (!bands.length) return;
 
-    // background-size:cover overflows the band by a different amount on
-    // every viewport (a wide, short band leaves far more vertical slack
-    // than a narrow mobile one, where cover is width-constrained). A fixed
-    // px clamp was safe on desktop but exposed the band's own background
-    // colour (the dark scrim) once the pan hit its limit on narrow
-    // viewports. Read each band's real natural image size once (same URL
-    // already loading as the CSS background, so this is a cache hit, not a
-    // new request) and derive the safe clamp from actual geometry instead.
+    // Pan spans the band's whole time on screen: 0 at the instant its top
+    // edge enters the viewport bottom, 1 at the instant its bottom edge
+    // leaves the viewport top. A pure background-size:cover often leaves
+    // near-zero vertical slack (a band's aspect ratio can land close to the
+    // source image's), which reads as a near-static image over that long a
+    // window. MIN_PAN_RATIO forces enough overflow, as a fraction of the
+    // band's own height, for the creep to read as real motion; it only
+    // takes over when cover's natural overflow falls short (desktop here
+    // already clears it), so it never upscales more than needed. Read each
+    // band's real natural image size once (same URL already loading as the
+    // CSS background, so this is a cache hit, not a new request) and derive
+    // both the size and the pan range from actual geometry.
+    var MIN_PAN_RATIO = 0.35;
+    var SAFETY = 2; // px; keeps subpixel rounding from ever exposing the scrim
+
     var naturalSize = new Map();
     bands.forEach(function (el) {
       var url = el.dataset.vcParallaxImage;
@@ -123,27 +130,33 @@
       var probe = new Image();
       probe.onload = function () {
         naturalSize.set(el, { w: probe.naturalWidth, h: probe.naturalHeight });
+        requestUpdate(); // size arrives after first paint; reposition once known
       };
       probe.src = url;
     });
+
+    var vh = window.innerHeight || document.documentElement.clientHeight;
 
     var ticking = false;
     function update() {
       bands.forEach(function (el) {
         var rect = el.getBoundingClientRect();
-        var speed = parseFloat(el.dataset.vcParallax) || 0.2;
-        var offset = rect.top * speed * -1;
         var maxOffset = 0;
         var size = naturalSize.get(el);
         if (size && rect.width && rect.height) {
-          var scale = Math.max(rect.width / size.w, rect.height / size.h);
-          var scaledHeight = size.h * scale;
-          // Half the vertical overflow cover leaves beyond the band, minus
-          // a small safety margin so subpixel rounding never exposes the
-          // scrim at the very edge of the pan.
-          maxOffset = Math.max(0, (scaledHeight - rect.height) / 2 - 2);
+          var coverScale = Math.max(rect.width / size.w, rect.height / size.h);
+          var targetOverflow = rect.height * MIN_PAN_RATIO;
+          var targetScale = (rect.height + 2 * (targetOverflow + SAFETY)) / size.h;
+          var scale = Math.max(coverScale, targetScale);
+          var scaledH = size.h * scale;
+          el.style.backgroundSize = size.w * scale + "px " + scaledH + "px";
+          maxOffset = Math.max(0, (scaledH - rect.height) / 2 - SAFETY);
         }
-        offset = Math.max(-maxOffset, Math.min(maxOffset, offset));
+        // progress: 0 = top edge at viewport bottom, 1 = bottom edge at
+        // viewport top. Clamped so scroll past either end holds the extreme.
+        var progress = (vh - rect.top) / (vh + rect.height);
+        progress = Math.max(0, Math.min(1, progress));
+        var offset = maxOffset ? (progress * 2 - 1) * maxOffset : 0;
         el.style.backgroundPosition = "center calc(50% + " + offset + "px)";
       });
       ticking = false;
@@ -155,7 +168,14 @@
       }
     }
     window.addEventListener("scroll", requestUpdate, { passive: true });
-    window.addEventListener("resize", requestUpdate, { passive: true });
+    window.addEventListener(
+      "resize",
+      function () {
+        vh = window.innerHeight || document.documentElement.clientHeight;
+        requestUpdate();
+      },
+      { passive: true }
+    );
     update();
   }
 
