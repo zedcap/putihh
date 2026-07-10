@@ -81,11 +81,24 @@
   opacity: 0.75;
 }
 
-/* Change 3: uniform footer text size, matching the address-block size
-   (.brxy-footer p is 14px). Column headings, contact links, copyright, and
-   the secondary-footer tagline all inherit 14px from here; logo is an <img>
-   with explicit width/height attributes, unaffected by font-size. */
-.brxy-footer,
-.brxy-secondary-footer {
+/* Change 3: main footer text size, matching the address-block size
+   (.brxy-footer p is 14px). Column headings, contact links, and the address
+   block inherit 14px from here; logo is an <img> with explicit width/height
+   attributes, unaffected by font-size. The bottom .brxy-secondary-footer bar
+   (copyright + tagline) is a separate element, not touched here, so it keeps
+   the theme's own original size (brixey-styles.css, ~10px). */
+.brxy-footer {
   font-size: 14px;
+}
+
+/* Change 4: the project-page carousel was showing two arrows per side, a
+   big one and a small one overlapping it. Swiper 11's own default CSS
+   (vendor-swiper-11.2.6.min.css) draws a glyph via ::after (swiper-icons
+   font). The theme's CSS (brixey-styles.css, built for the old Swiper 3)
+   separately draws a smaller FontAwesome glyph via ::before on the same
+   button. Both fire since both stylesheets are loaded. Drop the theme's
+   ::before glyph, keep Swiper's own ::after arrow as the single glyph. */
+.swiper-button-prev:before,
+.swiper-button-next:before {
+  content: none;
 }
