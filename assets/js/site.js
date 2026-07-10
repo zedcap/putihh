@@ -107,32 +107,55 @@
     // loads). This function only handles the scroll-linked pan.
     var bands = document.querySelectorAll(".brxy-parallax-band");
     if (!bands.length) return;
+
+    // background-size:cover overflows the band by a different amount on
+    // every viewport (a wide, short band leaves far more vertical slack
+    // than a narrow mobile one, where cover is width-constrained). A fixed
+    // px clamp was safe on desktop but exposed the band's own background
+    // colour (the dark scrim) once the pan hit its limit on narrow
+    // viewports. Read each band's real natural image size once (same URL
+    // already loading as the CSS background, so this is a cache hit, not a
+    // new request) and derive the safe clamp from actual geometry instead.
+    var naturalSize = new Map();
+    bands.forEach(function (el) {
+      var url = el.dataset.vcParallaxImage;
+      if (!url) return;
+      var probe = new Image();
+      probe.onload = function () {
+        naturalSize.set(el, { w: probe.naturalWidth, h: probe.naturalHeight });
+      };
+      probe.src = url;
+    });
+
     var ticking = false;
     function update() {
       bands.forEach(function (el) {
         var rect = el.getBoundingClientRect();
         var speed = parseFloat(el.dataset.vcParallax) || 0.2;
         var offset = rect.top * speed * -1;
-        // Clamp: background-size:cover only overflows the band by a limited
-        // amount. Past that, panning exposes the band's own background
-        // colour (the dark scrim) as a flat band. 50px stays well inside
-        // the cover overflow for this image/row pairing at both viewports.
-        var maxOffset = 50;
+        var maxOffset = 0;
+        var size = naturalSize.get(el);
+        if (size && rect.width && rect.height) {
+          var scale = Math.max(rect.width / size.w, rect.height / size.h);
+          var scaledHeight = size.h * scale;
+          // Half the vertical overflow cover leaves beyond the band, minus
+          // a small safety margin so subpixel rounding never exposes the
+          // scrim at the very edge of the pan.
+          maxOffset = Math.max(0, (scaledHeight - rect.height) / 2 - 2);
+        }
         offset = Math.max(-maxOffset, Math.min(maxOffset, offset));
         el.style.backgroundPosition = "center calc(50% + " + offset + "px)";
       });
       ticking = false;
     }
-    window.addEventListener(
-      "scroll",
-      function () {
-        if (!ticking) {
-          requestAnimationFrame(update);
-          ticking = true;
-        }
-      },
-      { passive: true }
-    );
+    function requestUpdate() {
+      if (!ticking) {
+        requestAnimationFrame(update);
+        ticking = true;
+      }
+    }
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate, { passive: true });
     update();
   }
 

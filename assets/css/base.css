@@ -145,3 +145,21 @@
 .project-picture:before {
   pointer-events: none;
 }
+
+/* Change 10: home project-tile images (build.py, home_grid_order) come from
+   four different source photos at four different native aspect ratios.
+   width:100% with no fixed height (the theme default) let each tile take
+   its own image's aspect ratio, so tiles of different heights sat side by
+   side in the same row. A fixed 16:9 box plus object-fit:cover crops any
+   source photo to one identical tile height, never stretches it (the
+   theme default was `width:100%` with intrinsic height, not `fill`; cover
+   is the belt-and-braces choice regardless of source aspect). */
+.project-listings.style1 .project-picture {
+  aspect-ratio: 16 / 9;
+}
+.project-listings.style1 .project-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
