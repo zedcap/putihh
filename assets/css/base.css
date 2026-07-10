@@ -59,3 +59,33 @@
 .brxy-full-page .brxy-project-detail .project-controls {
   top: 68px;
 }
+
+/* Change 1: more breathing room between the Prev/grid/Next nav bar and the
+   project name. Theme shipped .project-title with margin-bottom only; add
+   margin-top so the title doesn't sit flush under the nav row's border. */
+.brxy-project-detail .project-title {
+  margin-top: 26px;
+}
+
+/* Change 2: drop the solid black square behind the swiper prev/next arrows.
+   Arrow glyph (FontAwesome, via ::before, inherits color/text-shadow) stays
+   white with a soft shadow for contrast on light photo areas, no box. */
+.swiper-button-prev,
+.swiper-button-next {
+  background: transparent;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85), 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: transparent;
+  opacity: 0.75;
+}
+
+/* Change 3: uniform footer text size, matching the address-block size
+   (.brxy-footer p is 14px). Column headings, contact links, copyright, and
+   the secondary-footer tagline all inherit 14px from here; logo is an <img>
+   with explicit width/height attributes, unaffected by font-size. */
+.brxy-footer,
+.brxy-secondary-footer {
+  font-size: 14px;
+}
